@@ -28,12 +28,39 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Birds favBird = new Birds();
+            
+            favBird.Name = "Bald Eagle";
+            favBird.FeatherColor = "Brown";
+            favBird.Size = "Large Bird";
+            favBird.CanFly = true;
+
+            Console.WriteLine($"My favorite Bird is the {favBird.Name}");
+            Console.WriteLine($"The colors of its feathers are {favBird.FeatherColor} and it's a very {favBird.Size}");
+            Console.WriteLine($"Can it Fly?: {favBird.CanFly}");
 
             /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+           *  give values to your members using the object of your Reptile class
+           *  
+           * Creatively display the class member values 
+           */
+            var favReptile = new Reptile();
+            favReptile.HasLegs = true;
+            favReptile.SkinColor = "green";
+            favReptile.Name = "Crocodile";
+            favReptile.Size = "one of the biggest reptiles on the planet";
+            favReptile.HasTeeth = true;
+            Console.WriteLine();
+            Console.WriteLine($"My #1 reptile is the {favReptile.Name}");
+            Console.WriteLine($"Its color is mostly {favReptile.SkinColor} and is {favReptile.Size}");  
+            Console.WriteLine($"Does it have teeth?: {favReptile.HasTeeth}");   
+
+
+
+
+
+
+
         }
     }
 }
